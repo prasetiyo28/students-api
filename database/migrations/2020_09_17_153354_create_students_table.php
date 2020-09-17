@@ -15,7 +15,12 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('student_number', 20)->unique();
+            $table->string('email', 191)->unique();
+            $table->string('name');
+            $table->string('gender',6);
+            $table->text('address');
+            $table->timestamps(); 
         });
     }
 
