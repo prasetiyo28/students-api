@@ -22,4 +22,4 @@ Route::get('/students', 'StudentController@index');
 Route::get('/students/{id?}', 'StudentController@show');
 Route::post('/students', 'StudentController@store');
 Route::delete('/students/{id?}', 'StudentController@destroy');
-Route::put('/students/{id?}', 'StudentController@update');
+Route::put('/students', 'StudentController@update');
